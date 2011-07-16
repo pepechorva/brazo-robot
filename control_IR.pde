@@ -83,8 +83,18 @@ void loop()
     }
     case 129:
     {
-       rotarHombro.write(rotaHombroDefecto);
-       rotaHombroActual = rotaHombroDefecto;
+      while(rotaHombroDefecto < rotaHombroActual)
+      {
+        rotaHombroActual = rotaHombroActual - 1;
+        rotarHombro.write(rotaHombroActual);
+        delay(10);
+      }
+      while(rotaHombroDefecto > rotaHombroActual)
+      {
+        rotaHombroActual = rotaHombroActual + 1;
+        rotarHombro.write(rotaHombroActual);
+        delay(10);
+      }
 //         Serial.print("Posicion por defecto del hombro");
       break;
     }
@@ -106,8 +116,19 @@ void loop()
     }
     case 132:
     {
-      elevarHombro.write(elevaHombroDefecto);
-      elevaHombroActual = elevaHombroDefecto;
+      while(elevaHombroDefecto < elevaHombroActual)
+      {
+        elevaHombroActual = elevaHombroActual - 1;
+        elevarHombro.write(elevaHombroActual);
+        delay(10);
+      }
+      while(elevaHombroDefecto > elevaHombroActual)
+      {
+        elevaHombroActual = elevaHombroActual + 1;
+        elevarHombro.write(elevaHombroActual);
+        delay(10);
+      }
+
       break;
     }
     case 133:
@@ -127,8 +148,18 @@ void loop()
     }
     case 135:
     {
-      codo.write(codoDefecto);
-      codoActual = codoDefecto;
+      while(codoDefecto < codoActual)
+      {
+        codoActual = codoActual - 1;
+        codo.write(codoActual);
+        delay(10);
+      }
+      while(codoDefecto > codoActual)
+      {
+        codoActual = codoActual + 1;
+        codo.write(codoActual);
+        delay(10);
+      }
       break;
     }
     case 136:
@@ -148,8 +179,18 @@ void loop()
     }
     case 137:
     {
-      mano.write(manoDefecto);
-      manoActual = manoDefecto;
+      while(manoDefecto < manoActual)
+      {
+        manoActual = manoActual - 1;
+        mano.write(manoActual);
+        delay(10);
+      }
+      while(manoDefecto > manoActual)
+      {
+        manoActual = manoActual + 1;
+        mano.write(manoActual);
+        delay(10);
+      }
       break;
     }
     case 187:
