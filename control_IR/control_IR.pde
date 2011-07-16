@@ -1,3 +1,10 @@
+//Brazo robotico controlado por IR
+//Autores:
+//Jose Manuel Escuder Martinez
+//Jose Chorva Aguilella
+//Manuel Hidalgo 
+//Juan Antonio Caravaca Plaza
+
 #include <Servo.h>
 //Variables del programa		 
 
